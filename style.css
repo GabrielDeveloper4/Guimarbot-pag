@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-width: 450px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #141528;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.con-texto {
+    display: flex;
+    align-items: center;
+}
+
+.con-texto p {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.con-texto a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    background: #69688C;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        align-items: center;
+        height: 70px;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 63px;
+        left: 0;
+        width: 100%;
+        background: #141528;
+        z-index: 99;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle i {
+        margin: 10px;
+    }
+
+    .navbar a {
+        padding: 15px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1hY2lvbnxlbnwwfHwwfHx8MA%3D%3D) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #69688C;
+    color: #fff;
+    text-decoration: none;
+    background: #69688C;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.sau {
+    padding: 30px;
+    background: #69688C;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #16151c;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(48, 48, 52, 0.5);
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #69688C;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #69688C;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: #16151c;
+}
+
+.price {
+    background: url(https://img.freepik.com/fotos-premium/lenguaje-programacion-sobre-fondo-pantalla-negro_752562-5.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.social i {
+    transition: color 0.3s ease-in-out;
+}
+
+.social i:hover {
+    color: #55acee;
+}
